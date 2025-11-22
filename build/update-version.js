@@ -2,7 +2,7 @@
  * This updates the version number in the metadata to the version specified in package.json.
  * @since 0.0.6
 */
-
+/*
 import fs from 'fs';
 import { consoleStyle } from './utils.js';
 
@@ -16,3 +16,4 @@ meta = meta.replace(/@version\s+[\d.]+/, `@version      ${version}`);
 
 fs.writeFileSync('src/BlueMarble.meta.js', meta);
 console.log(`${consoleStyle.GREEN}Updated${consoleStyle.RESET} userscript version to ${consoleStyle.MAGENTA}${version}${consoleStyle.RESET}`);
+*/
