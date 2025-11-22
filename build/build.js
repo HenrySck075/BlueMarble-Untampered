@@ -45,9 +45,6 @@ try {
   process.exit(1);
 }
 
-// Fetches the userscript metadata banner
-const metaContent = fs.readFileSync('src/BlueMarble.meta.js', 'utf8');
-
 // Compiles a string array of all CSS files
 const cssFiles = fs.readdirSync('src/')
   .filter(file => file.endsWith('.css'))
@@ -131,12 +128,5 @@ const mapCSS = mangleSelectors({
 if (mapCSS) {
   fs.writeFileSync('dist/BlueMarble.user.css.map.json', JSON.stringify(mapCSS, null, 2));
 }
-
-// Adds the banner
-fs.writeFileSync(
-  'dist/BlueMarble.user.js', 
-  metaContent + fs.readFileSync('dist/BlueMarble.user.js', 'utf8'), 
-  'utf8'
-);
 
 console.log(`${consoleStyle.GREEN + consoleStyle.BOLD + consoleStyle.UNDERLINE}Building complete!${consoleStyle.RESET}`);

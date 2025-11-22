@@ -144,41 +144,6 @@ export default class ApiManager {
 
   // Sends a heartbeat to the telemetry server
   async sendHeartbeat(version) {
-
-    console.log('Sending heartbeat to telemetry server...');
-
-    let userSettings = localStorage.getItem('BM_bmUserSettings') || '{}';
-    userSettings = JSON.parse(userSettings);
-
-    if (!userSettings || !userSettings.telemetry || !userSettings.uuid) {
-      console.log('Telemetry is disabled, not sending heartbeat.');
-      return; // If telemetry is disabled, do not send heartbeat
-    }
-
-    const ua = navigator.userAgent;
-    let browser = await this.#getBrowserFromUA(ua);
-    let os = this.#getOS(ua);
-
-    window.originalFetch('https://telemetry.thebluecorner.net/heartbeat', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        uuid: userSettings.uuid,
-        version: version,
-        browser: browser,
-        os: os,
-      })
-    })
-    .then(response => {
-      if (!response.ok) {
-        consoleError('Failed to send heartbeat:', response.statusText);
-      }
-    })
-    .catch(error => {
-      consoleError('Error sending heartbeat:', error);
-    });
   }
 
   async #getBrowserFromUA(ua = navigator.userAgent) {
