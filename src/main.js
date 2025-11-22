@@ -228,13 +228,6 @@ if (Object.keys(userSettings).length == 0) {
 }
 setInterval(() => apiManager.sendHeartbeat(version), 1000 * 60 * 30); // Sends a heartbeat every 30 minutes
 
-console.log(`Telemetry is ${!(userSettings?.telemetry == undefined)}`);
-if ((userSettings?.telemetry == undefined) || (userSettings?.telemetry > 1)) { // Increment 1 to retrigger telemetry notice
-  const telemetryOverlay = new Overlay(name, version);
-  telemetryOverlay.setApiManager(apiManager); // Sets the API manager for the telemetry overlay
-  buildTelemetryOverlay(telemetryOverlay); // Notifies the user about telemetry
-}
-
 buildOverlayMain(); // Builds the main overlay
 
 overlayMain.handleDrag('#bm-overlay', '#bm-bar-drag'); // Creates dragging capability on the drag bar for dragging the overlay
