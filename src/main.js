@@ -718,7 +718,7 @@ function buildOverlayMain() {
           if (t && key && templateManager.templatesJSON?.templates?.[key]) {
             templateManager.templatesJSON.templates[key].palette = t.colorPalette;
             // persist immediately
-            GM.setValue('bmTemplates', JSON.stringify(templateManager.templatesJSON));
+            localStorage.setItem('BM'+'bmTemplates', JSON.stringify(templateManager.templatesJSON));
           }
         } catch (_) {}
       });
@@ -772,7 +772,7 @@ function buildTelemetryOverlay(overlay) {
             button.onclick = () => {
               const userSettings = JSON.parse(GM_getValue('bmUserSettings', '{}'));
               userSettings.telemetry = 1;
-              GM.setValue('bmUserSettings', JSON.stringify(userSettings));
+              localStorage.setItem('BM'+'bmUserSettings', JSON.stringify(userSettings));
               const element = document.getElementById('bm-overlay-telemetry');
               if (element) {
                 element.style.display = 'none';
@@ -783,7 +783,7 @@ function buildTelemetryOverlay(overlay) {
             button.onclick = () => {
               const userSettings = JSON.parse(GM_getValue('bmUserSettings', '{}'));
               userSettings.telemetry = 0;
-              GM.setValue('bmUserSettings', JSON.stringify(userSettings));
+              localStorage.setItem('BM'+'bmUserSettings', JSON.stringify(userSettings));
               const element = document.getElementById('bm-overlay-telemetry');
               if (element) {
                 element.style.display = 'none';
