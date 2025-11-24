@@ -134,80 +134,12 @@
   <img alt="Showcase image of Blue Marble template" src="./assets/Showcase1.png">
 
   <h3>Installation Instructions</h3>
-  <a href="" target="_blank" rel="noopener noreferrer"><img alt="Supported Browsers" src="https://img.shields.io/badge/Supported%20Browsers-Chrome%20%7C%20Firefox%2A%20%7C%20Safari%20%7C%20Edge%20%7C%20Brave-orange?style=flat"></a>
-  <a href="" target="_blank" rel="noopener noreferrer"><img alt="Unupported Browsers" src="https://img.shields.io/badge/Unsupported%20Browsers-Firefox%2A%20%7C%20Kiwi%20%7C%20Vivaldi-red?style=flat"></a>
   <p>
-    Blue Marble has been verified to work on mobile devices. Blue Marble was designed on Chrome, but Blue Marble might work on "unsupported" browsers not listed above. Some versions/forks of Firefox work. Some versions/forks of Firefox do not work.
-    <br>
-    Installation instructions for Blue Marble are below. Click the arrows to expand the instructions you want to see. Blue text is a link.
-    <details>
-      <summary>
-        <b>Install Chrome</b> <sup>(Click to expand)</sup>
-      </summary>
-      <a href="https://www.youtube.com/watch?v=gg5oiJcftEc" target="_blank" rel="noopener noreferrer"><img alt="Install Tutorial" src="https://img.shields.io/badge/Install_Tutorial-gray?style=flat&logo=YouTube&logoColor=white&logoSize=auto&labelColor=darkred"></a>
-      <ol>
-        <li>Install the <a href="https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo" target="_blank" rel="noopener noreferrer">TamperMonkey</a> extension for Chrome.
-        <br>
-        <img alt="Click the 'Add extension' button" src="https://github.com/SwingTheVine/Wplace-BlueMarble/blob/main/docs/assets/ComputerChromeInstall1.png"></li>
-        <li>Right-click the extension.
-        <br>
-        <img alt="Enter the 'Manage Extension' menu" src="https://github.com/SwingTheVine/Wplace-BlueMarble/blob/main/docs/assets/ComputerChromeInstall2.png"></li>
-        <li>Left-click "Manage Extension."</li>
-        <li>Enable "Developer Mode."
-        <br>
-        <img alt="Enable 'Developer Mode' and 'Allow user scripts'" src="https://github.com/SwingTheVine/Wplace-BlueMarble/blob/main/docs/assets/ComputerChromeInstall3.png"></li>
-        <li>Enable "Allow user scripts."</li>
-        <li><strong>One-click install:</strong> Click this link to Install Blue Marble directly: <a href="https://github.com/SwingTheVine/Wplace-BlueMarble/releases/download/pre/BlueMarble.user.js" target="_blank" rel="noopener noreferrer"><strong>Install Blue Marble</strong></a>
-        <br>
-        TamperMonkey will automatically detect the userscript and prompt you to Install it.</li>
-        <li>Refresh the <a href="https://wplace.live/" target="_blank" rel="noopener noreferrer">wplace.live</a> webpage.</li>
-      </ol>
-    </details>
-    <details>
-      <summary>
-        <b>Install on Microsoft Edge</b> <sup>(Click to expand)</sup>
-      </summary>
-      <ol>
-        <li>Install the <a href="https://microsoftedge.microsoft.com/addons/detail/iikmkjmpaadaobahmlepeloendndfphd" target="_blank" rel="noopener noreferrer">TamperMonkey</a> plugin for Microsoft Edge.
-        <br>
-        <img alt="Click the 'Get' button" src="https://github.com/SwingTheVine/Wplace-BlueMarble/blob/main/docs/assets/ComputerEdgeInstall1.png"></li>
-        <li>Right-click the extension.
-        <br>
-        <img alt="Enter the 'Manage Extension' menu" src="https://github.com/SwingTheVine/Wplace-BlueMarble/blob/main/docs/assets/ComputerEdgeInstall2.png"></li>
-        <li>Left-click "Manage Extension."</li>
-        <li>Enable "Developer Mode."
-        <br>
-        <img alt="Enable 'Developer Mode'" src="https://github.com/SwingTheVine/Wplace-BlueMarble/blob/main/docs/assets/ComputerEdgeInstall3.png"></li>
-        <li>Download the <a href="https://github.com/SwingTheVine/Wplace-BlueMarble/releases" target="_blank" rel="noopener noreferrer">BlueMarble.user.js</a> file in the "Assets" of the latest release.</li>
-        <li>Open the TamperMonkey Dashboard.
-        <br>
-        <img alt="Enter the TamperMonkey 'Dashboard'" src="https://github.com/SwingTheVine/Wplace-BlueMarble/blob/main/docs/assets/ComputerEdgeInstall4.png"></li>
-        <li>Drag the <code>BlueMarble.user.js</code> file inside the dashboard of TamperMonkey.
-        <br>
-        <img alt="Drag the userscript into the dashboard" src="https://github.com/SwingTheVine/Wplace-BlueMarble/blob/main/docs/assets/ComputerChromeInstall5.png"></li>
-        <li>Click the "Install" button to Install Blue Marble.
-        <br>
-        <img alt="Click the 'Install' button" src="https://github.com/SwingTheVine/Wplace-BlueMarble/blob/main/docs/assets/ComputerChromeInstall6.png"></li>
-        <li>Enable Blue Marble inside the TamperMonkey dashboard.
-        <br>
-        <img alt="Enable Blue Marble" src="https://github.com/SwingTheVine/Wplace-BlueMarble/blob/main/docs/assets/ComputerChromeInstall7.png"></li>
-        <li>Refresh the <a href="https://wplace.live/" target="_blank" rel="noopener noreferrer">wplace.live</a> webpage.</li>
-      </ol>
-    </details>
-    <details>
-      <summary>
-        <b>Install on Firefox</b> <sup>(Click to expand)</sup>
-      </summary>
-      <ol>
-        <li>Install the <a href="https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/" target="_blank" rel="noopener noreferrer">TamperMonkey</a> plugin for Firefox.
-        <br>
-        <img alt="Click the 'Add to Firefox' button" src="https://github.com/SwingTheVine/Wplace-BlueMarble/blob/main/docs/assets/ComputerFirefoxInstall1.png"></li>
-        <li><strong>One-click install:</strong> Click this link to Install Blue Marble directly: <a href="https://github.com/SwingTheVine/Wplace-BlueMarble/releases/download/pre/BlueMarble.user.js" target="_blank" rel="noopener noreferrer"><strong>Install Blue Marble</strong></a>
-        <br>
-        TamperMonkey will automatically detect the userscript and prompt you to install it.</li>
-        <li>Refresh the <a href="https://wplace.live/" target="_blank" rel="noopener noreferrer">wplace.live</a> webpage.</li>
-      </ol>
-    </details>
+    Run the following script, either on DevTools or on the address bar with the <code>javascript:</code> protocol:
+    <pre><code>
+    (()=&gt;{const n=&quot;https://rinaboards.github.io&quot;,d=document.createElement(&quot;iframe&quot;);let a=!1;d.src=n+&quot;/BlueMarble-Untampered/loader.html&quot;,window.addEventListener(&quot;message&quot;,e=&gt;{var t;e.origin===n&amp;&amp;(a?((t=document.createElement(&quot;style&quot;)).textContent=e.data,document.head.appendChild(t),d.remove()):((t=document.createElement(&quot;script&quot;)).textContent=e.data,document.head.appendChild(t),a=!0,d.contentWindow.postMessage(&quot;&quot;,n)))}),document.body.appendChild(d)})();
+    </code></pre>
+    If you're skeptical feel free to beautify the code above, here's what it does: It loads the <a href="https://github.com/rinaboards/BlueMarble-Untampered/blob/dist/loader.html">loader.html</a> page from the deployed GitHub Pages as an iframe which sends the modified JS file and CSS file to the page through <code>postMessage</code> for it to inject to the page. thats it lmoa
   </p>
 
   <h3>Template Instructions</h3>
