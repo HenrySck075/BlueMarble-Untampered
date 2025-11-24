@@ -116,7 +116,8 @@
 <h2>Overview</h2>
 <p>
   Welcome to Blue Marble Untampered! Blue Marble Untampered is a modification of the popular Blue Marble userscript for use in browser environments that does not support extensions. 
-  > The rest of this readme is from the original repo. Please read this under the context of the original Blue Marble project (starring, contributing, etc.)
+  
+  <strong>The rest of this readme is from the original repo. Please read this under the context of the original Blue Marble project (starring, contributing, etc.)</strong>
   
   The purpose of Blue Marble is to allow you to take an image, and layer it onto the canvas! That way, you can easily trace the image of your art, without having to look back and forth between multiple tabs/monitors. In addition, Blue Marble supports some neat extra features such as: 
   <ul>
