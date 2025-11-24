@@ -176,13 +176,7 @@ inject(() => {
 
 // Imports the CSS file from dist folder on github
 // Load CSS from resource (replace GM_getResourceText)
-fetch("https://raw.githubusercontent.com/SwingTheVine/Wplace-BlueMarble/30256c4535ef239f287a8b09caa5fcdd8161ad5d/dist/BlueMarble.user.css")
-  .then(r => r.text())
-  .then(cssOverlay => {
-    const style = document.createElement('style');
-    style.textContent = cssOverlay;
-    document.head.appendChild(style);
-  });
+// Already does so by the bootloader
 
 // Imports the Roboto Mono font family
 var stylesheetLink = document.createElement('link');
