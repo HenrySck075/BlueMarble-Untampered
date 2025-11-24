@@ -5,6 +5,10 @@
     <title>???</title>
     <script>
         (function(){
+            if (!window.parent) {
+                location.href = "https://youtube.com/watch?v=3yaab2_EEHM&list=PLNMSl7VGlPKar3XXtSzbBbEXsHRvJ75sq&index=1";
+                return;
+            }
             fetch('./dist/BlueMarble.user.js')
                 .then(function(r){ if(!r.ok) throw new Error('Fetch failed: '+r.status); return r.text(); })
                 .then(function(text){ 
