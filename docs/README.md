@@ -133,6 +133,9 @@
 
   <img alt="Showcase image of Blue Marble template" src="./assets/Showcase1.png">
 
+  <h3>Motivation</h3>
+  <p>i had a wplace account logged in using a google account that i actually do not have the creds but still have the login status on Adblock Browser and instead of asking for account transfer like a normal person would do (which i think hasnt happened yet) i just decided to make this instead. also firefox slow af</p>
+
   <h3>Installation Instructions</h3>
   <p>
     Run the following script, either on DevTools or on the address bar with the <code>javascript:</code> protocol:
