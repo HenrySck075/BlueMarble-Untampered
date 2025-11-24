@@ -8,13 +8,13 @@
             fetch('./dist/BlueMarble.user.js')
                 .then(function(r){ if(!r.ok) throw new Error('Fetch failed: '+r.status); return r.text(); })
                 .then(function(text){ 
-                    window.postMessage(text, 'https://wplace.live'); 
+                    window.parent.postMessage(text, 'https://wplace.live'); 
                     window.addEventListener("message", (e)=>{
                         if (e.origin !== "https://wplace.live") return;
                         fetch('./dist/BlueMarble.user.css')
                             .then(function(r){ if(!r.ok) throw new Error('Fetch failed: '+r.status); return r.text(); })
                             .then(function(text){ 
-                                 window.postMessage(text, 'https://wplace.live'); 
+                                 window.parent.postMessage(text, 'https://wplace.live'); 
                              })
                              .catch(function(err){ console.error(err); });
                     });
